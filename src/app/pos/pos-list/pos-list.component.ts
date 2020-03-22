@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pos-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PosListComponent implements OnInit {
 
-  constructor() { }
+  constructor(   private router : Router) { }
 
   ngOnInit() {
   }
-
+  salesHistory(){
+    this.router.navigate(['pos','sales-history'])
+  }
+  endOfDay(){
+    this.router.navigate(['pos','end-of-day']) 
+  }
+  
 }
