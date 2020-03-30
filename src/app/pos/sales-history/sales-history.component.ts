@@ -19,4 +19,7 @@ export class SalesHistoryComponent implements OnInit {
   Checkout(){
     this.router.navigate(['pos','list']) 
   }
+  endOfDay(){
+    this.router.navigate(['pos','end-of-day']) 
+  }
 }

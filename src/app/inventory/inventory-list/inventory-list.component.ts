@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inventory-list',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
   }
-
+  promotion(){
+    this.router.navigate(['inventory','promotion-list'])
+  }
+  stock(){
+    this.router.navigate(['inventory','stock-list'])
+  }
+  category(){
+    this.router.navigate(['inventory','category-list'])
+  }
 }
