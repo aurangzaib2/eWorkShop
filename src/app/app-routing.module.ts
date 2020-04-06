@@ -33,6 +33,11 @@ const routes: Routes = [
     path: 'inventory',
     component: MenuComponent,
     loadChildren: () => import(`./inventory/inventory.module`).then(m => m.InventoryModule)
+  },
+  {
+    path: 'settings',
+    component: MenuComponent,
+    loadChildren: () => import(`./settings/settings.module`).then(m => m.SettingsModule)
   }
 ];
 

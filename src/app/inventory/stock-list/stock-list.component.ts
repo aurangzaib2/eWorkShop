@@ -15,4 +15,7 @@ export class StockListComponent implements OnInit {
   promotion(){
     this.router.navigate(['inventory','promotion-list'])
   }
+  category(){
+    this.router.navigate(['inventory','category-list'])
+  }
 }
